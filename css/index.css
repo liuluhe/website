@@ -1,0 +1,244 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color: #F5F5F5 /*gray white*/
+}
+/*--------------------logo,menu,design--------------------*/
+.header{
+	width: 1200px;
+	margin: 25px auto;
+}
+
+/*sub menu*/
+.header .menu ul{
+	display: none; 
+	list-style: none;
+	position: absolute;
+	width: 80px;  
+	opacity: 0.5;
+	background-color: white;
+}
+
+.header .logo{
+	float: left;
+	position: relative;
+}
+.header .menu{
+	float: left;
+	position: relative;
+	margin-top: 12px;
+	margin-left: 16px; 
+}
+
+/*---------------menu---------------*/
+.header .menu ul li{
+	margin-top: 20px; 
+	text-align: center;
+}
+/*frame*/
+.header .menu .menu_title{
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+	width: 100px;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+/*---------------login---------------*/
+.header .auth{
+	float: right;
+}
+.header .auth ul li{
+	float: left;
+	margin-right: 70px;
+	margin-top: 12px;
+	list-style: none;
+}
+
+/*--------------------Main section--------------------*/
+/*---------------Add to List---------------*/
+#shopcart {
+    background: white;
+    width: 1150px;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: #333 0 0 10px;
+}
+.carttitle {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 2px #888;
+}
+.carttitle p {
+    flex: auto;
+}
+.cartitem {
+    height: 80px;
+    border-bottom: dashed #666 1px;
+    line-height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.cartitem:last-of-type {
+    border-bottom: solid 2px #888;
+}
+.cartitem p {
+    flex: auto;
+}
+.cartitem p img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.cartitem p button {
+    width: 25px;
+    height: 25px;
+}
+.cartitem p input[type="number"] {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.carttitle p:nth-of-type(1),
+.cartitem p:nth-of-type(1),
+.carttitle p:nth-of-type(2),
+.cartitem p:nth-of-type(2) {
+    width: 30px;
+}
+.carttitle p:nth-of-type(3),
+.cartitem p:nth-of-type(3),
+.carttitle p:nth-of-type(4),
+.cartitem p:nth-of-type(4),
+.carttitle p:nth-of-type(5),
+.cartitem p:nth-of-type(5),
+.carttitle p:nth-of-type(6),
+.cartitem p:nth-of-type(6) {
+    width: 90px;
+}
+.carttitle p:nth-of-type(7),
+.cartitem p:nth-of-type(7) {
+    flex: 1;
+}
+ #shopcart>p {
+    float: right;
+    font-size: 22px;
+    line-height: 60px;
+}
+.cartitem p:nth-of-type(6) .counter {
+    text-align: center;
+}
+/*---------------banner---------------*/
+.content{
+	width: 1200px;
+	margin: 25px auto;
+}
+.content .banner .banner_img{
+	margin-top: 20px;
+}
+/*---------------image design---------------*/
+.content .img_content ul{
+	width: 1280px;
+}
+.content .img_content ul li{
+	width: 360px;  /*360*3+120*/
+	float: left;
+	margin: 0 60px 60px 0; 
+	list-style: none;
+	background-color: #FFFFFF;
+	margin-top: 30px;
+	height: 500px; /*列表边框*/
+	/*browser specific*/
+	-webkit-box-shadow: 0 0 5px 3px #ccc; /*chrome*/
+	-moz-box-shadow: 0 0 5px 3px #ccc; /*firefox*/
+}
+/*title font*/
+.content .img_content .info h3{
+	font-size: 25px;
+	color: red;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*image block*/
+.content .img_content .info p{
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+.content .img_content .info{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+/*price/age design*/
+.content .img_content .info .img_btn .age{
+	color: red;
+	font-size: 20px;
+}
+
+/*image button*/
+.content .img_content .info .img_btn{
+	width: 300px;
+}
+.content .img_content .info .img_btn .btn{
+	width: 60px;
+	height: 30px;
+	background-color: red;
+	text-align: center;
+	border-radius: 5px;
+	float: right;
+}
+.content .img_content .info .img_btn .btn .cart img{
+	width: 60px;
+	height: 20px;
+	margin-top: 5px;
+
+}
+.content .img_content .info .img_btn .age{
+	float: left;
+}
+/*page guide*/
+.content .page_nav{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	overflow:hidden;
+}
+.content .page_nav ul li{
+	float: left;
+	margin-right: 20px;
+	list-style: none; 
+}
+.content .page_nav ul{
+	width: 500px;
+	margin: auto;
+	overflow:hidden;
+}
+.content .page_nav .first_page{
+	border-radius: 50%;
+	background-color: #c5c5c5;
+	padding: 3px 9px;
+}
+
+/*-------------------------footprint-------------------------*/
+.footer{
+	width: 1200px;
+	height: 100px;
+	margin: 60px auto;
+	border-top:1px solid #ccc;
+	overflow: hidden; 
+}
+.footer p{
+	text-align: center;
+	line-height: 80px;
+}	
+.footer p span{
+	color: #ff1490;
+}
