@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lulu's Marketplace Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!--script type="text/javascript" src="js/index.js"></script-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+  </head>
+  <body>
+    <!-- --------------------Header Part-------------------- -->
+    <div class="header">
+      <!-- logo -->
+      <div class="logo">
+        <img src="image/logo.png" />
+      </div>
+      <!-- setup drop down menu -->
+      <div class="menu" onmouseleave="remove_menu()">
+        <div class="menu_title" onmouseover="show_menu()">
+          <a href="#">Is She Cute?</a>
+        </div>
+        <ul id="menu1">
+          <li>Yes</li>
+          <li>No</li>
+        </ul>
+      </div>
+      <!-- login & signup -->
+      <div class="auth">
+        <ul>
+          <li><a href="#">Signup</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- --------------------Main-------------------- -->
+    <div class="content">
+      <div class="banner">
+        <img src="image/welcome2.png" class="banner_img" />
+      </div>
+
+      <!-- Shopping cart part-->
+      <div id="shopcart">
+        <div class="carttitle">
+          <p><input type="checkbox" name="all" id="all" />Check All</p>
+          <p>ID</p>
+          <p>Pic</p>
+          <p>Title</p>
+          <p>Price</p>
+          <p>Num</p>
+          <p>Sum</p>
+        </div>
+        <div class="cartitem">
+          <p><input type="checkbox" class="item" /></p>
+          <p>1</p>
+          <p><img src="image/cat2.png" alt="" /></p>
+          <p>Mid-Autumn Festival</p>
+          <p class="price">999.00</p>
+          <p>
+            <button class="sub">-</button>
+            <input type="number" class="counter" value="0" />
+            <button class="add">+</button>
+          </p>
+          <p>$<span class="sub-total">0.0</span></p>
+        </div>
+        <div class="cartitem">
+          <p><input type="checkbox" class="item" /></p>
+          <p>2</p>
+          <p><img src="image/cat4.png" alt="" /></p>
+          <p>Sleep Well</p>
+          <p class="price">399.00</p>
+          <p>
+            <button class="sub">-</button>
+            <input type="number" class="counter" value="0" />
+            <button class="add">+</button>
+          </p>
+          <p>$<span class="sub-total">0.0</span></p>
+        </div>
+        <div class="cartitem">
+          <p><input type="checkbox" class="item" /></p>
+          <p>3</p>
+          <p><img src="image/cat1.png" alt="" /></p>
+          <p>Weight</p>
+          <p class="price">699.00</p>
+          <p>
+            <button class="sub">-</button>
+            <input type="number" class="counter" value="0" />
+            <button class="add">+</button>
+          </p>
+          <p>$<span class="sub-total">0.0</span></p>
+        </div>
+        <p>TOTAL：$<span id="total">0.0</span></p>
+      </div>
+
+      <div class="img_content">
+        <ul>
+          <li>
+            <img src="image/cat1.png" class="img_li" />
+            <div class="info">
+              <h3>Weight</h3>
+              <p>
+                Chuchu just came to my home. She likes to play hide and seek
+              </p>
+              <div class="img_btn">
+                <div class="age">2 Months</div>
+                <div class="btn">
+                  <a href="#" class="cart">
+                    <img src="image/cart.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="image/cat2.png" class="img_li" />
+            <div class="info">
+              <h3>Mid-Autumn Festival</h3>
+              <p>Taken on mid autumn festival with moon cakes.</p>
+              <div class="img_btn">
+                <div class="age">2 Months</div>
+                <!-- cart button -->
+                <div class="btn">
+                  <a href="#" class="cart">
+                    <img src="image/cart.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="image/cat3.png" class="img_li" />
+            <div class="info">
+              <h3>Go For A Walk</h3>
+              <p>
+                Doing her first park walk with a leash. Hope my cat can walk
+                with me like a dog.
+              </p>
+              <div class="img_btn">
+                <div class="age">3 Months</div>
+                <!-- cart button -->
+                <div class="btn">
+                  <a href="#" class="cart">
+                    <img src="image/cart.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="image/cat4.png" class="img_li" />
+            <div class="info">
+              <h3>Sleep Well</h3>
+              <p>Like to sleep on the cushion and wrap in a cycle.</p>
+              <div class="img_btn">
+                <div class="age">5 Months</div>
+                <!-- cart button -->
+                <div class="btn">
+                  <a href="#" class="cart">
+                    <img src="image/cart.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="image/cat5.png" class="img_li" />
+            <div class="info">
+              <h3>Enjoy Walk</h3>
+              <p>
+                Chu gets used to going for a walk and be curious and brave
+                outsite. She likes humans but hates dogs.
+              </p>
+              <div class="img_btn">
+                <div class="age">6 Months</div>
+                <!-- cart button -->
+                <div class="btn">
+                  <a href="#" class="cart">
+                    <img src="image/cart.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="image/cat6.png" class="img_li" />
+            <div class="info">
+              <h3>Cat Bed</h3>
+              <p>I knitted a cat bed and she likes it.</p>
+              <div class="img_btn">
+                <div class="age">6 Months</div>
+                <!-- cart button -->
+                <div class="btn">
+                  <a href="#" class="cart">
+                    <img src="image/cart.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- pages -->
+      <div class="page_nav">
+        <ul>
+          <li><a href="#">First</a></li>
+          <li><a href="#">Previous</a></li>
+
+          <li><span class="first_page">2021</span></li>
+
+          <li><a href="#">2022</a></li>
+          <li><a href="#">2023</a></li>
+
+          <li><a href="#">Next</a></li>
+          <li><a href="#">Last</a></li>
+        </ul>
+      </div>
+      <!--div class="right"><h3>RIGHT</h3></div-->
+    </div>
+    <!-- --------------------Cart List-------------------- -->
+
+    <!-- --------------------Footprint-------------------- -->
+    <div class="footer">
+      <p class="p2">
+        This is a demo site for training purpose POWERED BY <span>liuluhe</span>
+      </p>
+    </div>
+  </body>
+</html>
